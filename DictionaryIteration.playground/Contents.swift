@@ -18,7 +18,7 @@
  */
 // write your code here
 
-
+var bestSellingAlbum = ["Nirvana":"Nevermind","Blondie":"Parallel Lines","The Kinks":"Low Budget","The Beatles":"Sgt. Pepper's Lonely Hearts Club Band"]
 
 
 
@@ -31,9 +31,9 @@
 // write your code here
 
 
+bestSellingAlbum["Pixie"] = "Doolitte"
 
-
-
+bestSellingAlbum
 
 
 
@@ -44,7 +44,9 @@
 
 
 
+bestSellingAlbum.removeValueForKey("The Kinks")
 
+bestSellingAlbum
 
 
 
@@ -56,8 +58,7 @@
 let bandName = "Nirvana"
 // write your code here
 
-
-
+print("\(bandName)'s top-selling album was \(bestSellingAlbum[bandName]!)")
 
 
 
@@ -68,7 +69,9 @@ let bandName = "Nirvana"
  */
 // write your code here
 
-
+for (band,album) in bestSellingAlbum {
+    print("\(band)'s top-selling album was \(album)")
+}
 
 
 
@@ -80,7 +83,7 @@ let bandName = "Nirvana"
  */
 
 
-
+//[String:String]
 
 
 
@@ -90,7 +93,7 @@ let bandName = "Nirvana"
  ### 7. Imagine every student in every grade in a high school took an exam. Each student got a letter grade based on their test results (A, B, C, D, and F). The results were averaged together per grade. How could you represent this mapping of grades to exam average?
  */
 
-
+let exam = [Int:String]()
 
 
 
@@ -107,8 +110,7 @@ let bandName = "Nirvana"
  */
 // write your code here
 
-
-
+let gradeExam = [9:"B",10:"A",11:"C",12:"B"]
 
 
 
@@ -120,7 +122,9 @@ let bandName = "Nirvana"
 // write your code here
 
 
-
+for (grade,exam) in gradeExam {
+print("Grade \(grade) got \(exam)")
+}
 
 
 
@@ -131,7 +135,11 @@ let bandName = "Nirvana"
  */
 // write your code here
 
-
+for (grade,exam) in gradeExam {
+    if gradeExam[grade] == "A" {
+    print("Grade \(grade) got the highest score with \(exam)!")
+    }
+}
 
 
 
